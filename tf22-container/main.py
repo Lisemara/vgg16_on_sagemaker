@@ -46,7 +46,7 @@ def train():
     optimizer = optimizers.RMSprop(lr=1e-4),
     metrics=['accuracy'])
 
-    initial_epochs = 1
+    initial_epochs = 50
     history = model.fit(train_generator,
                     epochs=initial_epochs,
                     validation_data=validation_generator)
